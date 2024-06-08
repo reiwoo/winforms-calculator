@@ -72,7 +72,11 @@ namespace ProjectToG
 
         private void skControl4_PaintSurface(object sender, SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs e)
         {
-
+            var painter = new CSharpMath.SkiaSharp.MathPainter();
+            painter.LaTeX = @"Formula: S = \frac{\sqrt{3}}{4}a^{2}";
+            painter.TextColor = new SKColor(215, 241, 241);
+            painter.WrapColor(100);
+            painter.Draw(e.Surface.Canvas);
         }
 
         private void skControl5_PaintSurface(object sender, SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs e)
@@ -143,7 +147,98 @@ namespace ProjectToG
 
             bunifuTextBox7.Text = area.ToString();
         }
+        private void CalculateHeron()
+        {
+            string side1Text = bunifuTextBox10.Text;
+            string side2Text = bunifuTextBox9.Text;
+            string side3Text = bunifuTextBox8.Text;
 
+            if (string.IsNullOrWhiteSpace(side1Text) || string.IsNullOrWhiteSpace(side2Text) || string.IsNullOrWhiteSpace(side3Text))
+            {
+                MessageBox.Show("Side lengths cannot be empty.");
+                return;
+            }
+
+            if (!double.TryParse(side1Text, out double side1) || !double.TryParse(side2Text, out double side2) || !double.TryParse(side3Text, out double side3))
+            {
+                MessageBox.Show("All side lengths must be valid numbers.");
+                return;
+            }
+
+            if (side1 <= 0 || side2 <= 0 || side3 <= 0)
+            {
+                MessageBox.Show("Side lengths must be positive numbers.");
+                return;
+            }
+
+            if (side1 + side2 <= side3 || side1 + side3 <= side2 || side2 + side3 <= side1)
+            {
+                MessageBox.Show("The provided side lengths do not form a valid triangle.");
+                return;
+            }
+
+            double semiPerimeter = (side1 + side2 + side3) / 2;
+
+            double area = Math.Sqrt(semiPerimeter * (semiPerimeter - side1) * (semiPerimeter - side2) * (semiPerimeter - side3));
+            bunifuTextBox11.Text = area.ToString();
+        }
+        private void CalculateEquilateral()
+        {
+            string sideText = bunifuTextBox13.Text; 
+            
+            if (string.IsNullOrWhiteSpace(sideText))
+            {
+                MessageBox.Show("Side length cannot be empty.");
+                return;
+            }
+
+            if (!double.TryParse(sideText, out double side))
+            {
+                MessageBox.Show("Side length must be a valid number.");
+                return;
+            } 
+
+            if (side <= 0)
+            {
+                MessageBox.Show("Side length must be a positive number.");
+                return;
+            }
+
+            double area = (Math.Sqrt(3) / 4) * Math.Pow(side, 2);
+            bunifuTextBox12.Text = area.ToString();
+        }
+        private void CalculateIsosceles()
+        {
+            string sideText = bunifuTextBox16.Text; 
+            string baseText = bunifuTextBox15.Text;
+
+            if (string.IsNullOrWhiteSpace(sideText) || string.IsNullOrWhiteSpace(baseText))
+            {
+                MessageBox.Show("Both side length and base length cannot be empty.");
+                return;
+            }
+
+            if (!double.TryParse(sideText, out double side) || !double.TryParse(baseText, out double baseLength))
+            {
+                MessageBox.Show("Both side length and base length must be valid numbers.");
+                return;
+            }
+
+            if (side <= 0 || baseLength <= 0)
+            {
+                MessageBox.Show("Both side length and base length must be positive numbers.");
+                return;
+            }
+
+            if (side <= baseLength / 2)
+            {
+                MessageBox.Show("Side length must be greater than half of the base length.");
+                return;
+            }
+
+            double area = (baseLength / 2) * Math.Sqrt(Math.Pow(side, 2) - Math.Pow(baseLength, 2) / 4);
+            bunifuTextBox14.Text = area.ToString();
+        }
         private void bunifuButton21_Click(object sender, EventArgs e)
         {
             if (comboBox1.SelectedIndex == 0)
@@ -153,6 +248,18 @@ namespace ProjectToG
             else if (comboBox1.SelectedIndex == 1) 
             {
                 CalculateCoordinates();
+            }
+            else if (comboBox1.SelectedIndex == 2)
+            {
+                CalculateHeron();
+            }
+            else if(comboBox1.SelectedIndex == 3)
+            {
+                CalculateEquilateral();
+            }
+            else
+            {
+                CalculateIsosceles();
             }
         }
     }
