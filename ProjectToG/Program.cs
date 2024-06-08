@@ -16,7 +16,7 @@ namespace ProjectToG
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new triangle());
+            Application.Run(new Calculator());
         }
     }
 }

@@ -40,6 +40,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(200, 120);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.FormulaItem_Click);
             // 
             // area_parallelogram
             // 
@@ -53,6 +54,7 @@
             this.Location = new System.Drawing.Point(24, 20);
             this.Name = "area_parallelogram";
             this.Size = new System.Drawing.Size(250, 211);
+            this.Click += new System.EventHandler(this.FormulaItem_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

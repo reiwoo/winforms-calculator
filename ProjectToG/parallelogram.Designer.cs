@@ -1,6 +1,6 @@
 ﻿namespace ProjectToG
 {
-    partial class triangle
+    partial class parallelogram
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(triangle));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(parallelogram));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
@@ -162,7 +162,7 @@
             this.bunifuButton21.AutoSizeLeftIcon = true;
             this.bunifuButton21.AutoSizeRightIcon = true;
             this.bunifuButton21.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuButton21.BackColor1 = System.Drawing.Color.Transparent;
+            this.bunifuButton21.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.bunifuButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuButton21.BackgroundImage")));
             this.bunifuButton21.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             this.bunifuButton21.ButtonText = "Calculate";
@@ -191,10 +191,10 @@
             this.bunifuButton21.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.bunifuButton21.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.bunifuButton21.IconSize = 25;
-            this.bunifuButton21.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton21.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.bunifuButton21.IdleBorderRadius = 30;
             this.bunifuButton21.IdleBorderThickness = 1;
-            this.bunifuButton21.IdleFillColor = System.Drawing.Color.Transparent;
+            this.bunifuButton21.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.bunifuButton21.IdleIconLeftImage = null;
             this.bunifuButton21.IdleIconRightImage = null;
             this.bunifuButton21.IndicateFocus = false;
@@ -216,11 +216,11 @@
             this.bunifuButton21.onHoverState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton21.onHoverState.IconLeftImage = null;
             this.bunifuButton21.onHoverState.IconRightImage = null;
-            this.bunifuButton21.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.bunifuButton21.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.bunifuButton21.OnIdleState.BorderRadius = 30;
             this.bunifuButton21.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             this.bunifuButton21.OnIdleState.BorderThickness = 1;
-            this.bunifuButton21.OnIdleState.FillColor = System.Drawing.Color.Transparent;
+            this.bunifuButton21.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.bunifuButton21.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.bunifuButton21.OnIdleState.IconLeftImage = null;
             this.bunifuButton21.OnIdleState.IconRightImage = null;
@@ -337,10 +337,8 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "General",
-            "Coordinates",
-            "Heron\'s Formula",
-            "Equilateral",
-            "Isosceles"});
+            "Angle",
+            "Diagonal"});
             this.comboBox1.Location = new System.Drawing.Point(215, 69);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(235, 27);
@@ -352,11 +350,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Poppins ExtraBold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.label1.Location = new System.Drawing.Point(193, 9);
+            this.label1.Location = new System.Drawing.Point(150, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(287, 48);
+            this.label1.Size = new System.Drawing.Size(371, 48);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Triangle Calculator";
+            this.label1.Text = "Parallelogram Calculator";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // trianglepages
@@ -371,10 +369,10 @@
             this.trianglepages.Location = new System.Drawing.Point(68, 102);
             this.trianglepages.Multiline = true;
             this.trianglepages.Name = "trianglepages";
-            this.trianglepages.Page = this.tabPage5;
-            this.trianglepages.PageIndex = 4;
-            this.trianglepages.PageName = "tabPage5";
-            this.trianglepages.PageTitle = "Isosceles";
+            this.trianglepages.Page = this.tabPage3;
+            this.trianglepages.PageIndex = 2;
+            this.trianglepages.PageName = "tabPage3";
+            this.trianglepages.PageTitle = "heron";
             this.trianglepages.SelectedIndex = 0;
             this.trianglepages.Size = new System.Drawing.Size(544, 258);
             this.trianglepages.TabIndex = 4;
@@ -711,11 +709,11 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.label6.Location = new System.Drawing.Point(96, 127);
+            this.label6.Location = new System.Drawing.Point(98, 127);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 25);
+            this.label6.Size = new System.Drawing.Size(59, 25);
             this.label6.TabIndex = 20;
-            this.label6.Text = "(x3,y3):";
+            this.label6.Text = "angle:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
@@ -723,11 +721,11 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.label5.Location = new System.Drawing.Point(96, 99);
+            this.label5.Location = new System.Drawing.Point(131, 99);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 25);
+            this.label5.Size = new System.Drawing.Size(26, 25);
             this.label5.TabIndex = 19;
-            this.label5.Text = "(x2,y2):";
+            this.label5.Text = "b:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bunifuTextBox7
@@ -1051,11 +1049,11 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.label7.Location = new System.Drawing.Point(102, 71);
+            this.label7.Location = new System.Drawing.Point(131, 71);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 25);
+            this.label7.Size = new System.Drawing.Size(26, 25);
             this.label7.TabIndex = 11;
-            this.label7.Text = "(x1,y1):";
+            this.label7.Text = "a:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // skControl2
@@ -1180,11 +1178,11 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.label9.Location = new System.Drawing.Point(140, 127);
+            this.label9.Location = new System.Drawing.Point(105, 127);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(25, 25);
+            this.label9.Size = new System.Drawing.Size(59, 25);
             this.label9.TabIndex = 26;
-            this.label9.Text = "c:";
+            this.label9.Text = "angle:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label10
@@ -1192,11 +1190,11 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.label10.Location = new System.Drawing.Point(140, 99);
+            this.label10.Location = new System.Drawing.Point(130, 99);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(26, 25);
+            this.label10.Size = new System.Drawing.Size(34, 25);
             this.label10.TabIndex = 25;
-            this.label10.Text = "b:";
+            this.label10.Text = "d2:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bunifuTextBox8
@@ -1432,11 +1430,11 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.label11.Location = new System.Drawing.Point(140, 71);
+            this.label11.Location = new System.Drawing.Point(133, 71);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(26, 25);
+            this.label11.Size = new System.Drawing.Size(31, 25);
             this.label11.TabIndex = 21;
-            this.label11.Text = "a:";
+            this.label11.Text = "d1:";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // skControl3
@@ -1941,7 +1939,7 @@
             this.skControl5.TabIndex = 2;
             this.skControl5.PaintSurface += new System.EventHandler<SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs>(this.skControl5_PaintSurface);
             // 
-            // triangle
+            // parallelogram
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1953,8 +1951,8 @@
             this.Controls.Add(this.bunifuButton22);
             this.Controls.Add(this.bunifuButton21);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "triangle";
-            this.Text = "triangle";
+            this.Name = "parallelogram";
+            this.Text = "shape1";
             this.trianglepages.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -1981,13 +1979,9 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage5;
         private SkiaSharp.Views.Desktop.SKControl skControl1;
         private SkiaSharp.Views.Desktop.SKControl skControl2;
         private SkiaSharp.Views.Desktop.SKControl skControl3;
-        private SkiaSharp.Views.Desktop.SKControl skControl4;
-        private SkiaSharp.Views.Desktop.SKControl skControl5;
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox3;
         private System.Windows.Forms.Label label4;
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox2;
@@ -2010,15 +2004,19 @@
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox9;
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox10;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TabPage tabPage4;
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox12;
         private System.Windows.Forms.Label label13;
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox13;
         private System.Windows.Forms.Label label14;
+        private SkiaSharp.Views.Desktop.SKControl skControl4;
+        private System.Windows.Forms.TabPage tabPage5;
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox14;
         private System.Windows.Forms.Label label15;
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox15;
         private System.Windows.Forms.Label label16;
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox16;
         private System.Windows.Forms.Label label17;
+        private SkiaSharp.Views.Desktop.SKControl skControl5;
     }
 }

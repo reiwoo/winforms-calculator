@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SkiaSharp;
 
+
 namespace ProjectToG
 {
     public partial class triangle : Form
@@ -19,7 +20,6 @@ namespace ProjectToG
             InitializeComponent();
             comboBox1.SelectedIndex = 0;
         }
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             int selectedIndex = comboBox1.SelectedIndex;
@@ -81,6 +81,11 @@ namespace ProjectToG
 
         private void skControl5_PaintSurface(object sender, SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs e)
         {
+            var painter = new CSharpMath.SkiaSharp.MathPainter();
+            painter.LaTeX = @"Formula: S=\frac{b}{2}\sqrt{a^{2}-\frac{b^{2}}{4}}";
+            painter.TextColor = new SKColor(215, 241, 241);
+            painter.WrapColor(100);
+            painter.Draw(e.Surface.Canvas);
 
         }
         private void bunifuButton22_Click(object sender, EventArgs e)
