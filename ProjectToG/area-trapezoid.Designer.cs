@@ -40,6 +40,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(183, 157);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.FormulaItem_Click);
             // 
             // area_trapezoid
             // 
@@ -51,6 +52,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "area_trapezoid";
             this.Size = new System.Drawing.Size(250, 218);
+            this.Click += new System.EventHandler(this.FormulaItem_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

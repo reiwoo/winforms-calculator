@@ -201,6 +201,30 @@
     <Compile Include="parallelogram.Designer.cs">
       <DependentUpon>parallelogram.cs</DependentUpon>
     </Compile>
+    <Compile Include="rectangle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rectangle.Designer.cs">
+      <DependentUpon>rectangle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rhombus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rhombus.Designer.cs">
+      <DependentUpon>rhombus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="square.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="square.Designer.cs">
+      <DependentUpon>square.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trapezoid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trapezoid.Designer.cs">
+      <DependentUpon>trapezoid.cs</DependentUpon>
+    </Compile>
     <Compile Include="triangle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -249,6 +273,18 @@
     </Compile>
     <EmbeddedResource Include="parallelogram.resx">
       <DependentUpon>parallelogram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rectangle.resx">
+      <DependentUpon>rectangle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rhombus.resx">
+      <DependentUpon>rhombus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="square.resx">
+      <DependentUpon>square.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trapezoid.resx">
+      <DependentUpon>trapezoid.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="triangle.resx">
       <DependentUpon>triangle.cs</DependentUpon>
