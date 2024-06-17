@@ -1761,6 +1761,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "rhombus";
             this.Text = "rhombus";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.rhombus_MouseDown);
             this.trianglepages.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

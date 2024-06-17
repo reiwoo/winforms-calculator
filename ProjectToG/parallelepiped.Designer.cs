@@ -197,10 +197,10 @@
             this.trianglepages.Location = new System.Drawing.Point(68, 102);
             this.trianglepages.Multiline = true;
             this.trianglepages.Name = "trianglepages";
-            this.trianglepages.Page = this.tabPage5;
-            this.trianglepages.PageIndex = 4;
-            this.trianglepages.PageName = "tabPage5";
-            this.trianglepages.PageTitle = "Isosceles";
+            this.trianglepages.Page = this.tabPage1;
+            this.trianglepages.PageIndex = 0;
+            this.trianglepages.PageName = "tabPage1";
+            this.trianglepages.PageTitle = "general";
             this.trianglepages.SelectedIndex = 0;
             this.trianglepages.Size = new System.Drawing.Size(544, 258);
             this.trianglepages.TabIndex = 4;
@@ -2052,6 +2052,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "parallelepiped";
             this.Text = "parallelepiped";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.parallelepiped_MouseDown);
             this.trianglepages.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

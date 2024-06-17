@@ -84,37 +84,37 @@
             this.label1 = new System.Windows.Forms.Label();
             this.trianglepages = new Bunifu.UI.WinForms.BunifuPages();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.bunifuTextBox3 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.skControl1 = new SkiaSharp.Views.Desktop.SKControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.bunifuTextBox7 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.skControl2 = new SkiaSharp.Views.Desktop.SKControl();
+            this.bunifuTextBox6 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.bunifuTextBox11 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.skControl3 = new SkiaSharp.Views.Desktop.SKControl();
+            this.bunifuTextBox10 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.bunifuTextBox2 = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.bunifuTextBox12 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.bunifuTextBox13 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.skControl4 = new SkiaSharp.Views.Desktop.SKControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.bunifuTextBox14 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.skControl5 = new SkiaSharp.Views.Desktop.SKControl();
-            this.label3 = new System.Windows.Forms.Label();
-            this.bunifuTextBox3 = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuTextBox7 = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuTextBox6 = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuTextBox11 = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuTextBox10 = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuTextBox2 = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuTextBox12 = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuTextBox13 = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuTextBox14 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuTextBox15 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuTextBox16 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.bunifuButton22 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
@@ -166,10 +166,10 @@
             this.trianglepages.Location = new System.Drawing.Point(68, 102);
             this.trianglepages.Multiline = true;
             this.trianglepages.Name = "trianglepages";
-            this.trianglepages.Page = this.tabPage4;
-            this.trianglepages.PageIndex = 3;
-            this.trianglepages.PageName = "tabPage4";
-            this.trianglepages.PageTitle = "Equilateral";
+            this.trianglepages.Page = this.tabPage1;
+            this.trianglepages.PageIndex = 0;
+            this.trianglepages.PageName = "tabPage1";
+            this.trianglepages.PageTitle = "general";
             this.trianglepages.SelectedIndex = 0;
             this.trianglepages.Size = new System.Drawing.Size(544, 258);
             this.trianglepages.TabIndex = 4;
@@ -205,264 +205,6 @@
             this.tabPage1.Size = new System.Drawing.Size(536, 232);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "general";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.label4.Location = new System.Drawing.Point(129, 102);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 25);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "S =";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.label2.Location = new System.Drawing.Point(138, 71);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(22, 25);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "r:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // skControl1
-            // 
-            this.skControl1.Font = new System.Drawing.Font("Poppins ExtraBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.skControl1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.skControl1.Location = new System.Drawing.Point(145, 6);
-            this.skControl1.Name = "skControl1";
-            this.skControl1.Size = new System.Drawing.Size(233, 59);
-            this.skControl1.TabIndex = 0;
-            this.skControl1.PaintSurface += new System.EventHandler<SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs>(this.skControl1_PaintSurface);
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.tabPage2.Controls.Add(this.bunifuTextBox7);
-            this.tabPage2.Controls.Add(this.label8);
-            this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.skControl2);
-            this.tabPage2.Controls.Add(this.bunifuTextBox6);
-            this.tabPage2.Location = new System.Drawing.Point(4, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(536, 232);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "coordinates";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.label8.Location = new System.Drawing.Point(131, 102);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(33, 25);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "S =";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.label7.Location = new System.Drawing.Point(138, 71);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(26, 25);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "d:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // skControl2
-            // 
-            this.skControl2.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.skControl2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.skControl2.Location = new System.Drawing.Point(6, 6);
-            this.skControl2.Name = "skControl2";
-            this.skControl2.Size = new System.Drawing.Size(514, 59);
-            this.skControl2.TabIndex = 1;
-            this.skControl2.PaintSurface += new System.EventHandler<SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs>(this.skControl2_PaintSurface);
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.tabPage3.Controls.Add(this.bunifuTextBox11);
-            this.tabPage3.Controls.Add(this.label12);
-            this.tabPage3.Controls.Add(this.label11);
-            this.tabPage3.Controls.Add(this.skControl3);
-            this.tabPage3.Controls.Add(this.bunifuTextBox10);
-            this.tabPage3.Location = new System.Drawing.Point(4, 4);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(536, 232);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "heron";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.label12.Location = new System.Drawing.Point(131, 102);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(33, 25);
-            this.label12.TabIndex = 27;
-            this.label12.Text = "S =";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.label11.Location = new System.Drawing.Point(137, 71);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(27, 25);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "C:";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // skControl3
-            // 
-            this.skControl3.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.skControl3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.skControl3.Location = new System.Drawing.Point(45, 6);
-            this.skControl3.Name = "skControl3";
-            this.skControl3.Size = new System.Drawing.Size(446, 59);
-            this.skControl3.TabIndex = 1;
-            this.skControl3.PaintSurface += new System.EventHandler<SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs>(this.skControl3_PaintSurface);
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.tabPage4.Controls.Add(this.bunifuTextBox2);
-            this.tabPage4.Controls.Add(this.label3);
-            this.tabPage4.Controls.Add(this.bunifuTextBox12);
-            this.tabPage4.Controls.Add(this.label13);
-            this.tabPage4.Controls.Add(this.bunifuTextBox13);
-            this.tabPage4.Controls.Add(this.label14);
-            this.tabPage4.Controls.Add(this.skControl4);
-            this.tabPage4.Location = new System.Drawing.Point(4, 4);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(536, 232);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Equilateral";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.label13.Location = new System.Drawing.Point(130, 132);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(33, 25);
-            this.label13.TabIndex = 31;
-            this.label13.Text = "S =";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.label14.Location = new System.Drawing.Point(99, 71);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(64, 25);
-            this.label14.TabIndex = 29;
-            this.label14.Text = "radius:";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // skControl4
-            // 
-            this.skControl4.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.skControl4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.skControl4.Location = new System.Drawing.Point(55, 6);
-            this.skControl4.Name = "skControl4";
-            this.skControl4.Size = new System.Drawing.Size(439, 59);
-            this.skControl4.TabIndex = 2;
-            this.skControl4.PaintSurface += new System.EventHandler<SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs>(this.skControl4_PaintSurface);
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.tabPage5.Controls.Add(this.bunifuTextBox14);
-            this.tabPage5.Controls.Add(this.label15);
-            this.tabPage5.Controls.Add(this.label16);
-            this.tabPage5.Controls.Add(this.label17);
-            this.tabPage5.Controls.Add(this.skControl5);
-            this.tabPage5.Controls.Add(this.bunifuTextBox15);
-            this.tabPage5.Controls.Add(this.bunifuTextBox16);
-            this.tabPage5.Location = new System.Drawing.Point(4, 4);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(536, 232);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Isosceles";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.label15.Location = new System.Drawing.Point(132, 133);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(33, 25);
-            this.label15.TabIndex = 15;
-            this.label15.Text = "S =";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.label16.Location = new System.Drawing.Point(132, 102);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(26, 25);
-            this.label16.TabIndex = 13;
-            this.label16.Text = "b:";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.label17.Location = new System.Drawing.Point(132, 71);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(26, 25);
-            this.label17.TabIndex = 11;
-            this.label17.Text = "a:";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // skControl5
-            // 
-            this.skControl5.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.skControl5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.skControl5.Location = new System.Drawing.Point(97, 6);
-            this.skControl5.Name = "skControl5";
-            this.skControl5.Size = new System.Drawing.Size(349, 59);
-            this.skControl5.TabIndex = 2;
-            this.skControl5.PaintSurface += new System.EventHandler<SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs>(this.skControl5_PaintSurface);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.label3.Location = new System.Drawing.Point(103, 102);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 25);
-            this.label3.TabIndex = 33;
-            this.label3.Text = "angle:";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bunifuTextBox3
             // 
@@ -540,6 +282,18 @@
             this.bunifuTextBox3.UseSystemPasswordChar = false;
             this.bunifuTextBox3.WordWrap = true;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.label4.Location = new System.Drawing.Point(129, 102);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(33, 25);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "S =";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // bunifuTextBox1
             // 
             this.bunifuTextBox1.AcceptsReturn = false;
@@ -615,6 +369,43 @@
             this.bunifuTextBox1.TextPlaceholder = "Enter text";
             this.bunifuTextBox1.UseSystemPasswordChar = false;
             this.bunifuTextBox1.WordWrap = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.label2.Location = new System.Drawing.Point(138, 71);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(22, 25);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "r:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // skControl1
+            // 
+            this.skControl1.Font = new System.Drawing.Font("Poppins ExtraBold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.skControl1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.skControl1.Location = new System.Drawing.Point(145, 6);
+            this.skControl1.Name = "skControl1";
+            this.skControl1.Size = new System.Drawing.Size(233, 59);
+            this.skControl1.TabIndex = 0;
+            this.skControl1.PaintSurface += new System.EventHandler<SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs>(this.skControl1_PaintSurface);
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.tabPage2.Controls.Add(this.bunifuTextBox7);
+            this.tabPage2.Controls.Add(this.label8);
+            this.tabPage2.Controls.Add(this.label7);
+            this.tabPage2.Controls.Add(this.skControl2);
+            this.tabPage2.Controls.Add(this.bunifuTextBox6);
+            this.tabPage2.Location = new System.Drawing.Point(4, 4);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(536, 232);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "coordinates";
             // 
             // bunifuTextBox7
             // 
@@ -692,6 +483,40 @@
             this.bunifuTextBox7.UseSystemPasswordChar = false;
             this.bunifuTextBox7.WordWrap = true;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.label8.Location = new System.Drawing.Point(131, 102);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(33, 25);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "S =";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.label7.Location = new System.Drawing.Point(138, 71);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(26, 25);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "d:";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // skControl2
+            // 
+            this.skControl2.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.skControl2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.skControl2.Location = new System.Drawing.Point(6, 6);
+            this.skControl2.Name = "skControl2";
+            this.skControl2.Size = new System.Drawing.Size(514, 59);
+            this.skControl2.TabIndex = 1;
+            this.skControl2.PaintSurface += new System.EventHandler<SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs>(this.skControl2_PaintSurface);
+            // 
             // bunifuTextBox6
             // 
             this.bunifuTextBox6.AcceptsReturn = false;
@@ -767,6 +592,21 @@
             this.bunifuTextBox6.TextPlaceholder = "Enter text";
             this.bunifuTextBox6.UseSystemPasswordChar = false;
             this.bunifuTextBox6.WordWrap = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.tabPage3.Controls.Add(this.bunifuTextBox11);
+            this.tabPage3.Controls.Add(this.label12);
+            this.tabPage3.Controls.Add(this.label11);
+            this.tabPage3.Controls.Add(this.skControl3);
+            this.tabPage3.Controls.Add(this.bunifuTextBox10);
+            this.tabPage3.Location = new System.Drawing.Point(4, 4);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(536, 232);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "heron";
             // 
             // bunifuTextBox11
             // 
@@ -844,6 +684,40 @@
             this.bunifuTextBox11.UseSystemPasswordChar = false;
             this.bunifuTextBox11.WordWrap = true;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.label12.Location = new System.Drawing.Point(131, 102);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(33, 25);
+            this.label12.TabIndex = 27;
+            this.label12.Text = "S =";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.label11.Location = new System.Drawing.Point(137, 71);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(27, 25);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "C:";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // skControl3
+            // 
+            this.skControl3.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.skControl3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.skControl3.Location = new System.Drawing.Point(45, 6);
+            this.skControl3.Name = "skControl3";
+            this.skControl3.Size = new System.Drawing.Size(446, 59);
+            this.skControl3.TabIndex = 1;
+            this.skControl3.PaintSurface += new System.EventHandler<SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs>(this.skControl3_PaintSurface);
+            // 
             // bunifuTextBox10
             // 
             this.bunifuTextBox10.AcceptsReturn = false;
@@ -919,6 +793,23 @@
             this.bunifuTextBox10.TextPlaceholder = "Enter text";
             this.bunifuTextBox10.UseSystemPasswordChar = false;
             this.bunifuTextBox10.WordWrap = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.tabPage4.Controls.Add(this.bunifuTextBox2);
+            this.tabPage4.Controls.Add(this.label3);
+            this.tabPage4.Controls.Add(this.bunifuTextBox12);
+            this.tabPage4.Controls.Add(this.label13);
+            this.tabPage4.Controls.Add(this.bunifuTextBox13);
+            this.tabPage4.Controls.Add(this.label14);
+            this.tabPage4.Controls.Add(this.skControl4);
+            this.tabPage4.Location = new System.Drawing.Point(4, 4);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(536, 232);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Equilateral";
             // 
             // bunifuTextBox2
             // 
@@ -996,6 +887,18 @@
             this.bunifuTextBox2.UseSystemPasswordChar = false;
             this.bunifuTextBox2.WordWrap = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.label3.Location = new System.Drawing.Point(103, 102);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 25);
+            this.label3.TabIndex = 33;
+            this.label3.Text = "angle:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // bunifuTextBox12
             // 
             this.bunifuTextBox12.AcceptsReturn = false;
@@ -1071,6 +974,18 @@
             this.bunifuTextBox12.TextPlaceholder = "Enter text";
             this.bunifuTextBox12.UseSystemPasswordChar = false;
             this.bunifuTextBox12.WordWrap = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.label13.Location = new System.Drawing.Point(130, 132);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(33, 25);
+            this.label13.TabIndex = 31;
+            this.label13.Text = "S =";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bunifuTextBox13
             // 
@@ -1148,6 +1063,45 @@
             this.bunifuTextBox13.UseSystemPasswordChar = false;
             this.bunifuTextBox13.WordWrap = true;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.label14.Location = new System.Drawing.Point(99, 71);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(64, 25);
+            this.label14.TabIndex = 29;
+            this.label14.Text = "radius:";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // skControl4
+            // 
+            this.skControl4.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.skControl4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.skControl4.Location = new System.Drawing.Point(55, 6);
+            this.skControl4.Name = "skControl4";
+            this.skControl4.Size = new System.Drawing.Size(439, 59);
+            this.skControl4.TabIndex = 2;
+            this.skControl4.PaintSurface += new System.EventHandler<SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs>(this.skControl4_PaintSurface);
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.tabPage5.Controls.Add(this.bunifuTextBox14);
+            this.tabPage5.Controls.Add(this.label15);
+            this.tabPage5.Controls.Add(this.label16);
+            this.tabPage5.Controls.Add(this.label17);
+            this.tabPage5.Controls.Add(this.skControl5);
+            this.tabPage5.Controls.Add(this.bunifuTextBox15);
+            this.tabPage5.Controls.Add(this.bunifuTextBox16);
+            this.tabPage5.Location = new System.Drawing.Point(4, 4);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(536, 232);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Isosceles";
+            // 
             // bunifuTextBox14
             // 
             this.bunifuTextBox14.AcceptsReturn = false;
@@ -1223,6 +1177,52 @@
             this.bunifuTextBox14.TextPlaceholder = "Enter text";
             this.bunifuTextBox14.UseSystemPasswordChar = false;
             this.bunifuTextBox14.WordWrap = true;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.label15.Location = new System.Drawing.Point(132, 133);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(33, 25);
+            this.label15.TabIndex = 15;
+            this.label15.Text = "S =";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.label16.Location = new System.Drawing.Point(132, 102);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(26, 25);
+            this.label16.TabIndex = 13;
+            this.label16.Text = "b:";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Poppins ExtraBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.label17.Location = new System.Drawing.Point(132, 71);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(26, 25);
+            this.label17.TabIndex = 11;
+            this.label17.Text = "a:";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // skControl5
+            // 
+            this.skControl5.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.skControl5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.skControl5.Location = new System.Drawing.Point(97, 6);
+            this.skControl5.Name = "skControl5";
+            this.skControl5.Size = new System.Drawing.Size(349, 59);
+            this.skControl5.TabIndex = 2;
+            this.skControl5.PaintSurface += new System.EventHandler<SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs>(this.skControl5_PaintSurface);
             // 
             // bunifuTextBox15
             // 
@@ -1570,6 +1570,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "circle";
             this.Text = "circle";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.circle_MouseDown);
             this.trianglepages.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

@@ -1473,6 +1473,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "cube";
             this.Text = "cube";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cube_MouseDown);
             this.trianglepages.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

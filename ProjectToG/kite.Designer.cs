@@ -2048,6 +2048,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "kite";
             this.Text = "kite";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.kite_MouseDown);
             this.trianglepages.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

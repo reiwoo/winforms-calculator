@@ -57,6 +57,31 @@ namespace ProjectToG
         {
             this.Close();
         }
+        
+        private void bunifuTextBox1_TextChange(object sender, EventArgs e)
+        {
+            string searchText = bunifuTextBox1.Text.ToLower();
 
+            foreach (Control control in flowLayoutPanel.Controls)
+            {
+                if (control is Bunifu.UI.WinForms.BunifuUserControl userControl)
+                {
+                    userControl.Visible = userControl.Name.ToLower().Contains(searchText);
+                }
+            }
+        }
+
+        private void bunifuTextBox2_TextChange(object sender, EventArgs e)
+        {
+            string searchText = bunifuTextBox2.Text.ToLower();
+
+            foreach (Control control in flowLayoutPanel1.Controls)
+            {
+                if (control is Bunifu.UI.WinForms.BunifuUserControl userControl)
+                {
+                    userControl.Visible = userControl.Name.ToLower().Contains(searchText);
+                }
+            }
+        }
     }
 }

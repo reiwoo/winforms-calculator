@@ -1857,6 +1857,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "cone";
             this.Text = "cone";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cone_MouseDown);
             this.trianglepages.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

@@ -191,7 +191,7 @@
             this.bunifuButton21.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.bunifuButton21.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.bunifuButton21.IconSize = 25;
-            this.bunifuButton21.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.bunifuButton21.IdleBorderColor = System.Drawing.Color.DodgerBlue;
             this.bunifuButton21.IdleBorderRadius = 30;
             this.bunifuButton21.IdleBorderThickness = 1;
             this.bunifuButton21.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -216,7 +216,7 @@
             this.bunifuButton21.onHoverState.ForeColor = System.Drawing.Color.White;
             this.bunifuButton21.onHoverState.IconLeftImage = null;
             this.bunifuButton21.onHoverState.IconRightImage = null;
-            this.bunifuButton21.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.bunifuButton21.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
             this.bunifuButton21.OnIdleState.BorderRadius = 30;
             this.bunifuButton21.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderStyles.Solid;
             this.bunifuButton21.OnIdleState.BorderThickness = 1;
@@ -1953,6 +1953,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "parallelogram";
             this.Text = "shape1";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.parallelogram_MouseDown);
             this.trianglepages.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

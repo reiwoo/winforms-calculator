@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SkiaSharp;
+using System.Runtime.InteropServices;
 
 
 namespace ProjectToG
@@ -19,7 +20,23 @@ namespace ProjectToG
         {
             InitializeComponent();
             comboBox1.SelectedIndex = 0;
+            this.tabPage1.MouseDown += new MouseEventHandler(triangle_MouseDown);
+            this.tabPage2.MouseDown += new MouseEventHandler(triangle_MouseDown);
+            this.tabPage3.MouseDown += new MouseEventHandler(triangle_MouseDown);   
+            this.tabPage4.MouseDown += new MouseEventHandler(triangle_MouseDown);
+            this.tabPage5.MouseDown += new MouseEventHandler(triangle_MouseDown);
+            this.trianglepages.MouseDown += new MouseEventHandler(triangle_MouseDown);
+            this.MouseDown += new MouseEventHandler(this.triangle_MouseDown);
         }
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+
+        [DllImport("User32.dll")]
+        public static extern bool ReleaseCapture();
+
+        [DllImport("User32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             int selectedIndex = comboBox1.SelectedIndex;
@@ -265,6 +282,15 @@ namespace ProjectToG
             else
             {
                 CalculateIsosceles();
+            }
+        }
+
+        private void triangle_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
     }

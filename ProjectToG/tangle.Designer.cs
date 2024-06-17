@@ -357,10 +357,10 @@
             this.trianglepages.Location = new System.Drawing.Point(68, 102);
             this.trianglepages.Multiline = true;
             this.trianglepages.Name = "trianglepages";
-            this.trianglepages.Page = this.tabPage3;
-            this.trianglepages.PageIndex = 2;
-            this.trianglepages.PageName = "tabPage3";
-            this.trianglepages.PageTitle = "heron";
+            this.trianglepages.Page = this.tabPage1;
+            this.trianglepages.PageIndex = 0;
+            this.trianglepages.PageName = "tabPage1";
+            this.trianglepages.PageTitle = "general";
             this.trianglepages.SelectedIndex = 0;
             this.trianglepages.Size = new System.Drawing.Size(544, 258);
             this.trianglepages.TabIndex = 4;
@@ -1761,6 +1761,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "tangle";
             this.Text = "tangle";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tangle_MouseDown);
             this.trianglepages.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

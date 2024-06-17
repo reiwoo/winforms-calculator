@@ -1569,6 +1569,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "sphere";
             this.Text = "sphere";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.sphere_MouseDown);
             this.trianglepages.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

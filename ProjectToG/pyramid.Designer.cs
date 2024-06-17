@@ -1856,6 +1856,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "pyramid";
             this.Text = "pyramid";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pyramid_MouseDown);
             this.trianglepages.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

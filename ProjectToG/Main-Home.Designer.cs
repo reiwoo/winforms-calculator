@@ -53,10 +53,10 @@
             this.bunifuTextBox2 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.bunifuButton21 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
-            this.flowLayout = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.pages = new Bunifu.UI.WinForms.BunifuPages();
-            this.formulaItem1 = new ProjectToG.FormulaItem();
+            this.area_triangle1 = new ProjectToG.FormulaItem();
             this.area_parallelogram1 = new ProjectToG.area_parallelogram();
             this.area_square1 = new ProjectToG.area_square();
             this.area_rectangle1 = new ProjectToG.area_rectangle();
@@ -76,7 +76,7 @@
             this.tabPage4.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.flowLayout.SuspendLayout();
+            this.flowLayoutPanel.SuspendLayout();
             this.pages.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -438,9 +438,10 @@
             this.bunifuTextBox2.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
             this.bunifuTextBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.bunifuTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBox2.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.bunifuTextBox2.DefaultFont = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Bold);
             this.bunifuTextBox2.DefaultText = "";
             this.bunifuTextBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.bunifuTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.bunifuTextBox2.HideSelection = true;
             this.bunifuTextBox2.IconLeft = null;
             this.bunifuTextBox2.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -471,7 +472,7 @@
             this.bunifuTextBox2.OnHoverState = stateProperties3;
             stateProperties4.BorderColor = System.Drawing.Color.WhiteSmoke;
             stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox2.OnIdleState = stateProperties4;
             this.bunifuTextBox2.Padding = new System.Windows.Forms.Padding(3);
@@ -484,7 +485,7 @@
             this.bunifuTextBox2.SelectionLength = 0;
             this.bunifuTextBox2.SelectionStart = 0;
             this.bunifuTextBox2.ShortcutsEnabled = true;
-            this.bunifuTextBox2.Size = new System.Drawing.Size(311, 40);
+            this.bunifuTextBox2.Size = new System.Drawing.Size(311, 44);
             this.bunifuTextBox2.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.bunifuTextBox2.TabIndex = 2;
             this.bunifuTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -494,12 +495,13 @@
             this.bunifuTextBox2.TextPlaceholder = "Enter text";
             this.bunifuTextBox2.UseSystemPasswordChar = false;
             this.bunifuTextBox2.WordWrap = true;
+            this.bunifuTextBox2.TextChange += new System.EventHandler(this.bunifuTextBox2_TextChange);
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.tabPage1.Controls.Add(this.bunifuButton21);
-            this.tabPage1.Controls.Add(this.flowLayout);
+            this.tabPage1.Controls.Add(this.flowLayoutPanel);
             this.tabPage1.Controls.Add(this.bunifuTextBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
             this.tabPage1.Name = "tabPage1";
@@ -598,25 +600,25 @@
             this.bunifuButton21.UseDefaultRadiusAndThickness = true;
             this.bunifuButton21.Click += new System.EventHandler(this.bunifuButton21_Click);
             // 
-            // flowLayout
+            // flowLayoutPanel
             // 
-            this.flowLayout.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.flowLayoutPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayout.AutoScroll = true;
-            this.flowLayout.Controls.Add(this.formulaItem1);
-            this.flowLayout.Controls.Add(this.area_parallelogram1);
-            this.flowLayout.Controls.Add(this.area_square1);
-            this.flowLayout.Controls.Add(this.area_rectangle1);
-            this.flowLayout.Controls.Add(this.area_trapezoid1);
-            this.flowLayout.Controls.Add(this.area_rhombus1);
-            this.flowLayout.Controls.Add(this.area_tangle1);
-            this.flowLayout.Controls.Add(this.area_circle1);
-            this.flowLayout.Controls.Add(this.area_kite1);
-            this.flowLayout.Location = new System.Drawing.Point(19, 85);
-            this.flowLayout.Name = "flowLayout";
-            this.flowLayout.Size = new System.Drawing.Size(820, 480);
-            this.flowLayout.TabIndex = 2;
+            this.flowLayoutPanel.AutoScroll = true;
+            this.flowLayoutPanel.Controls.Add(this.area_triangle1);
+            this.flowLayoutPanel.Controls.Add(this.area_parallelogram1);
+            this.flowLayoutPanel.Controls.Add(this.area_square1);
+            this.flowLayoutPanel.Controls.Add(this.area_rectangle1);
+            this.flowLayoutPanel.Controls.Add(this.area_trapezoid1);
+            this.flowLayoutPanel.Controls.Add(this.area_rhombus1);
+            this.flowLayoutPanel.Controls.Add(this.area_tangle1);
+            this.flowLayoutPanel.Controls.Add(this.area_circle1);
+            this.flowLayoutPanel.Controls.Add(this.area_kite1);
+            this.flowLayoutPanel.Location = new System.Drawing.Point(19, 85);
+            this.flowLayoutPanel.Name = "flowLayoutPanel";
+            this.flowLayoutPanel.Size = new System.Drawing.Size(820, 480);
+            this.flowLayoutPanel.TabIndex = 2;
             // 
             // bunifuTextBox1
             // 
@@ -637,9 +639,10 @@
             this.bunifuTextBox1.CharacterCase = Bunifu.UI.WinForms.BunifuTextBox.CharacterCases.Normal;
             this.bunifuTextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.bunifuTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBox1.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.bunifuTextBox1.DefaultFont = new System.Drawing.Font("Poppins", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuTextBox1.DefaultText = "";
             this.bunifuTextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.bunifuTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.bunifuTextBox1.HideSelection = true;
             this.bunifuTextBox1.IconLeft = null;
             this.bunifuTextBox1.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -670,7 +673,7 @@
             this.bunifuTextBox1.OnHoverState = stateProperties7;
             stateProperties8.BorderColor = System.Drawing.Color.WhiteSmoke;
             stateProperties8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
+            stateProperties8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.bunifuTextBox1.OnIdleState = stateProperties8;
             this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(3);
@@ -683,7 +686,7 @@
             this.bunifuTextBox1.SelectionLength = 0;
             this.bunifuTextBox1.SelectionStart = 0;
             this.bunifuTextBox1.ShortcutsEnabled = true;
-            this.bunifuTextBox1.Size = new System.Drawing.Size(311, 40);
+            this.bunifuTextBox1.Size = new System.Drawing.Size(311, 44);
             this.bunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.bunifuTextBox1.TabIndex = 1;
             this.bunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -693,6 +696,7 @@
             this.bunifuTextBox1.TextPlaceholder = "Enter text";
             this.bunifuTextBox1.UseSystemPasswordChar = false;
             this.bunifuTextBox1.WordWrap = true;
+            this.bunifuTextBox1.TextChange += new System.EventHandler(this.bunifuTextBox1_TextChange);
             // 
             // pages
             // 
@@ -729,29 +733,29 @@
             this.pages.Transition = animation1;
             this.pages.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
             // 
-            // formulaItem1
+            // area_triangle1
             // 
-            this.formulaItem1.AllowAnimations = false;
-            this.formulaItem1.AllowBorderColorChanges = false;
-            this.formulaItem1.AllowMouseEffects = false;
-            this.formulaItem1.AnimationSpeed = 200;
-            this.formulaItem1.BackColor = System.Drawing.Color.Transparent;
-            this.formulaItem1.BackgroundColor = System.Drawing.Color.White;
-            this.formulaItem1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.formulaItem1.BorderRadius = 10;
-            this.formulaItem1.BorderStyle = Bunifu.UI.WinForms.BunifuUserControl.BorderStyles.Solid;
-            this.formulaItem1.BorderThickness = 3;
-            this.formulaItem1.ColorContrastOnClick = 30;
-            this.formulaItem1.ColorContrastOnHover = 30;
-            this.formulaItem1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.formulaItem1.Image = null;
-            this.formulaItem1.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.formulaItem1.Location = new System.Drawing.Point(3, 3);
-            this.formulaItem1.Name = "formulaItem1";
-            this.formulaItem1.ShowBorders = true;
-            this.formulaItem1.Size = new System.Drawing.Size(250, 222);
-            this.formulaItem1.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
-            this.formulaItem1.TabIndex = 0;
+            this.area_triangle1.AllowAnimations = false;
+            this.area_triangle1.AllowBorderColorChanges = false;
+            this.area_triangle1.AllowMouseEffects = false;
+            this.area_triangle1.AnimationSpeed = 200;
+            this.area_triangle1.BackColor = System.Drawing.Color.Transparent;
+            this.area_triangle1.BackgroundColor = System.Drawing.Color.White;
+            this.area_triangle1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.area_triangle1.BorderRadius = 10;
+            this.area_triangle1.BorderStyle = Bunifu.UI.WinForms.BunifuUserControl.BorderStyles.Solid;
+            this.area_triangle1.BorderThickness = 3;
+            this.area_triangle1.ColorContrastOnClick = 30;
+            this.area_triangle1.ColorContrastOnHover = 30;
+            this.area_triangle1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.area_triangle1.Image = null;
+            this.area_triangle1.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.area_triangle1.Location = new System.Drawing.Point(3, 3);
+            this.area_triangle1.Name = "area_triangle1";
+            this.area_triangle1.ShowBorders = true;
+            this.area_triangle1.Size = new System.Drawing.Size(250, 222);
+            this.area_triangle1.Style = Bunifu.UI.WinForms.BunifuUserControl.UserControlStyles.Flat;
+            this.area_triangle1.TabIndex = 0;
             // 
             // area_parallelogram1
             // 
@@ -1131,7 +1135,7 @@
             this.tabPage4.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.flowLayout.ResumeLayout(false);
+            this.flowLayoutPanel.ResumeLayout(false);
             this.pages.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -1146,8 +1150,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayout;
-        private FormulaItem formulaItem1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel;
+        private FormulaItem area_triangle1;
         private area_parallelogram area_parallelogram1;
         private area_square area_square1;
         private area_rectangle area_rectangle1;

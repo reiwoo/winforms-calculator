@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,7 +20,21 @@ namespace ProjectToG
         {
             InitializeComponent();
             comboBox1.SelectedIndex = 0;
+            this.MouseDown += new MouseEventHandler(pyramid_MouseDown);
+            this.tabPage1.MouseDown += new MouseEventHandler(pyramid_MouseDown);
+            this.tabPage2.MouseDown += new MouseEventHandler(pyramid_MouseDown);
+            this.tabPage3.MouseDown += new MouseEventHandler(pyramid_MouseDown);
+            this.tabPage4.MouseDown += new MouseEventHandler(pyramid_MouseDown);
+            this.tabPage5.MouseDown += new MouseEventHandler(pyramid_MouseDown);
         }
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+
+        [DllImport("User32.dll")]
+        public static extern bool ReleaseCapture();
+
+        [DllImport("User32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             int selectedIndex = comboBox1.SelectedIndex;
@@ -167,6 +182,15 @@ namespace ProjectToG
             else
             {
                 
+            }
+        }
+
+        private void pyramid_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
     }

@@ -1955,6 +1955,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "triangle";
             this.Text = "triangle";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.triangle_MouseDown);
             this.trianglepages.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
