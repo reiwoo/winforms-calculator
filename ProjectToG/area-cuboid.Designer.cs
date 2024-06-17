@@ -41,15 +41,19 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.FormulaItem_Click);
             // 
             // area_cuboid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundColor = System.Drawing.Color.White;
+            this.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.BorderRadius = 10;
             this.Controls.Add(this.pictureBox1);
             this.Name = "area_cuboid";
             this.Size = new System.Drawing.Size(250, 211);
-            this.Load += new System.EventHandler(this.area_cuboid_Load);
+            this.Click += new System.EventHandler(this.FormulaItem_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

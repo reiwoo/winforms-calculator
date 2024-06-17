@@ -12,9 +12,39 @@ namespace ProjectToG
 {
     public partial class area_cone : Bunifu.UI.WinForms.BunifuUserControl
     {
+        private cone coneForm;
         public area_cone()
         {
             InitializeComponent();
+        }
+        private void FormulaItem_Click(object sender, EventArgs e)
+        {
+            MouseEventArgs mouseArgs = e as MouseEventArgs;
+            Point clickLocation = mouseArgs.Location;
+            if (IsWithinOpaqueArea(clickLocation))
+            {
+                if (coneForm == null || coneForm.IsDisposed)
+                {
+                    coneForm = new cone();
+                    coneForm.Show();
+                }
+                else
+                {
+                    coneForm.BringToFront();
+                }
+            }
+        }
+        private bool IsWithinOpaqueArea(Point clickLocation)
+        {
+            int imageWidth = pictureBox1.Image.Width;
+            int imageHeight = pictureBox1.Image.Height;
+            if (clickLocation.X >= 0 && clickLocation.X < imageWidth && clickLocation.Y >= 0 && clickLocation.Y < imageHeight)
+            {
+                Color pixelColor = ((Bitmap)pictureBox1.Image).GetPixel(clickLocation.X, clickLocation.Y);
+                return pixelColor.A > 0;
+            }
+
+            return false;
         }
     }
 }

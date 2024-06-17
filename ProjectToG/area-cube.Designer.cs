@@ -40,6 +40,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(202, 204);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.FormulaItem_Click);
             // 
             // area_cube
             // 
@@ -50,6 +51,7 @@
             this.Location = new System.Drawing.Point(24, 20);
             this.Name = "area_cube";
             this.Size = new System.Drawing.Size(250, 211);
+            this.Click += new System.EventHandler(this.FormulaItem_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

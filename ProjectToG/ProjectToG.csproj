@@ -229,6 +229,24 @@
     <Compile Include="circle.Designer.cs">
       <DependentUpon>circle.cs</DependentUpon>
     </Compile>
+    <Compile Include="cone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cone.Designer.cs">
+      <DependentUpon>cone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cube.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cube.Designer.cs">
+      <DependentUpon>cube.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cylinder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cylinder.Designer.cs">
+      <DependentUpon>cylinder.cs</DependentUpon>
+    </Compile>
     <Compile Include="kite.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,6 +265,18 @@
     <Compile Include="area-triangle.Designer.cs">
       <DependentUpon>area-triangle.cs</DependentUpon>
     </Compile>
+    <Compile Include="parallelepiped.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="parallelepiped.Designer.cs">
+      <DependentUpon>parallelepiped.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prism.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prism.Designer.cs">
+      <DependentUpon>prism.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="parallelogram.cs">
@@ -254,6 +284,12 @@
     </Compile>
     <Compile Include="parallelogram.Designer.cs">
       <DependentUpon>parallelogram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pyramid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pyramid.Designer.cs">
+      <DependentUpon>pyramid.cs</DependentUpon>
     </Compile>
     <Compile Include="rectangle.cs">
       <SubType>Form</SubType>
@@ -266,6 +302,12 @@
     </Compile>
     <Compile Include="rhombus.Designer.cs">
       <DependentUpon>rhombus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sphere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sphere.Designer.cs">
+      <DependentUpon>sphere.cs</DependentUpon>
     </Compile>
     <Compile Include="square.cs">
       <SubType>Form</SubType>
@@ -339,6 +381,15 @@
     <EmbeddedResource Include="circle.resx">
       <DependentUpon>circle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="cone.resx">
+      <DependentUpon>cone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cube.resx">
+      <DependentUpon>cube.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cylinder.resx">
+      <DependentUpon>cylinder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="kite.resx">
       <DependentUpon>kite.cs</DependentUpon>
     </EmbeddedResource>
@@ -347,6 +398,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="area-triangle.resx">
       <DependentUpon>area-triangle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="parallelepiped.resx">
+      <DependentUpon>parallelepiped.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prism.resx">
+      <DependentUpon>prism.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -361,11 +418,17 @@
     <EmbeddedResource Include="parallelogram.resx">
       <DependentUpon>parallelogram.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="pyramid.resx">
+      <DependentUpon>pyramid.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="rectangle.resx">
       <DependentUpon>rectangle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rhombus.resx">
       <DependentUpon>rhombus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sphere.resx">
+      <DependentUpon>sphere.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="square.resx">
       <DependentUpon>square.cs</DependentUpon>
