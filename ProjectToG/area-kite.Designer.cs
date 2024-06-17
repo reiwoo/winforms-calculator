@@ -40,6 +40,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(172, 214);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.FormulaItem_Click);
             // 
             // area_kite
             // 
@@ -51,6 +52,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "area_kite";
             this.Size = new System.Drawing.Size(248, 221);
+            this.Click += new System.EventHandler(this.FormulaItem_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

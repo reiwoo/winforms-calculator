@@ -139,6 +139,30 @@
     <Compile Include="area-circle.Designer.cs">
       <DependentUpon>area-circle.cs</DependentUpon>
     </Compile>
+    <Compile Include="area-cone.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="area-cone.Designer.cs">
+      <DependentUpon>area-cone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="area-cube.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="area-cube.Designer.cs">
+      <DependentUpon>area-cube.cs</DependentUpon>
+    </Compile>
+    <Compile Include="area-cuboid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="area-cuboid.Designer.cs">
+      <DependentUpon>area-cuboid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="area-cylinder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="area-cylinder.Designer.cs">
+      <DependentUpon>area-cylinder.cs</DependentUpon>
+    </Compile>
     <Compile Include="area-kite.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -151,6 +175,18 @@
     <Compile Include="area-parallelogram.Designer.cs">
       <DependentUpon>area-parallelogram.cs</DependentUpon>
     </Compile>
+    <Compile Include="area-prism.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="area-prism.Designer.cs">
+      <DependentUpon>area-prism.cs</DependentUpon>
+    </Compile>
+    <Compile Include="area-pyramid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="area-pyramid.Designer.cs">
+      <DependentUpon>area-pyramid.cs</DependentUpon>
+    </Compile>
     <Compile Include="area-rectangle.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -162,6 +198,12 @@
     </Compile>
     <Compile Include="area-rhombus.Designer.cs">
       <DependentUpon>area-rhombus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="area-sphere.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="area-sphere.Designer.cs">
+      <DependentUpon>area-sphere.cs</DependentUpon>
     </Compile>
     <Compile Include="area-square.cs">
       <SubType>UserControl</SubType>
@@ -180,6 +222,18 @@
     </Compile>
     <Compile Include="area-trapezoid.Designer.cs">
       <DependentUpon>area-trapezoid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="circle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="circle.Designer.cs">
+      <DependentUpon>circle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kite.Designer.cs">
+      <DependentUpon>kite.cs</DependentUpon>
     </Compile>
     <Compile Include="Main-Home.cs">
       <SubType>Form</SubType>
@@ -219,6 +273,12 @@
     <Compile Include="square.Designer.cs">
       <DependentUpon>square.cs</DependentUpon>
     </Compile>
+    <Compile Include="tangle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tangle.Designer.cs">
+      <DependentUpon>tangle.cs</DependentUpon>
+    </Compile>
     <Compile Include="trapezoid.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -234,17 +294,38 @@
     <EmbeddedResource Include="area-circle.resx">
       <DependentUpon>area-circle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="area-cone.resx">
+      <DependentUpon>area-cone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="area-cube.resx">
+      <DependentUpon>area-cube.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="area-cuboid.resx">
+      <DependentUpon>area-cuboid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="area-cylinder.resx">
+      <DependentUpon>area-cylinder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="area-kite.resx">
       <DependentUpon>area-kite.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="area-parallelogram.resx">
       <DependentUpon>area-parallelogram.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="area-prism.resx">
+      <DependentUpon>area-prism.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="area-pyramid.resx">
+      <DependentUpon>area-pyramid.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="area-rectangle.resx">
       <DependentUpon>area-rectangle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="area-rhombus.resx">
       <DependentUpon>area-rhombus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="area-sphere.resx">
+      <DependentUpon>area-sphere.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="area-square.resx">
       <DependentUpon>area-square.cs</DependentUpon>
@@ -254,6 +335,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="area-trapezoid.resx">
       <DependentUpon>area-trapezoid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="circle.resx">
+      <DependentUpon>circle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kite.resx">
+      <DependentUpon>kite.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main-Home.resx">
       <DependentUpon>Main-Home.cs</DependentUpon>
@@ -282,6 +369,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="square.resx">
       <DependentUpon>square.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tangle.resx">
+      <DependentUpon>tangle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="trapezoid.resx">
       <DependentUpon>trapezoid.cs</DependentUpon>
@@ -339,6 +429,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ZSbrguh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rectangular-parallelepiped-eceaab64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula-of-cube-80fd33cf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula-of-cylinder-d2182a09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula-of-triangular-prism-f86abc20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula-of-cone-47f580d8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula-of-pyramid-a9dbb3c1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formula-of-sphere-df270a45.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\SkiaSharp.NativeAssets.macOS.2.88.8\build\net462\SkiaSharp.NativeAssets.macOS.targets" Condition="Exists('..\packages\SkiaSharp.NativeAssets.macOS.2.88.8\build\net462\SkiaSharp.NativeAssets.macOS.targets')" />

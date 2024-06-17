@@ -40,6 +40,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(235, 218);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.FormulaItem_Click);
             // 
             // area_tangle
             // 
@@ -51,6 +52,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "area_tangle";
             this.Size = new System.Drawing.Size(267, 221);
+            this.Click += new System.EventHandler(this.FormulaItem_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

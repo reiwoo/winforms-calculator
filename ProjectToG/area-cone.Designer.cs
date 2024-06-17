@@ -1,6 +1,6 @@
 ﻿namespace ProjectToG
 {
-    partial class area_circle
+    partial class area_cone
     {
         /// <summary> 
         /// Required designer variable.
@@ -34,25 +34,21 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ProjectToG.Properties.Resources.VFifIzN;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 13);
+            this.pictureBox1.Image = global::ProjectToG.Properties.Resources.formula_of_cone_47f580d8;
+            this.pictureBox1.Location = new System.Drawing.Point(44, 13);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(235, 188);
-            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.Size = new System.Drawing.Size(192, 175);
+            this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.FormulaItem_Click);
             // 
-            // area_circle
+            // area_cone
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.BorderRadius = 5;
             this.Controls.Add(this.pictureBox1);
-            this.Name = "area_circle";
-            this.Size = new System.Drawing.Size(268, 214);
-            this.Click += new System.EventHandler(this.FormulaItem_Click);
+            this.Name = "area_cone";
+            this.Size = new System.Drawing.Size(250, 211);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

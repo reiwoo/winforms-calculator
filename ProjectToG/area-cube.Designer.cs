@@ -1,6 +1,6 @@
 ﻿namespace ProjectToG
 {
-    partial class area_circle
+    partial class area_cube
     {
         /// <summary> 
         /// Required designer variable.
@@ -34,25 +34,22 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ProjectToG.Properties.Resources.VFifIzN;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 13);
+            this.pictureBox1.Image = global::ProjectToG.Properties.Resources.formula_of_cube_80fd33cf;
+            this.pictureBox1.Location = new System.Drawing.Point(45, 7);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(235, 188);
-            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.Size = new System.Drawing.Size(202, 204);
+            this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.FormulaItem_Click);
             // 
-            // area_circle
+            // area_cube
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.BorderRadius = 5;
             this.Controls.Add(this.pictureBox1);
-            this.Name = "area_circle";
-            this.Size = new System.Drawing.Size(268, 214);
-            this.Click += new System.EventHandler(this.FormulaItem_Click);
+            this.Location = new System.Drawing.Point(24, 20);
+            this.Name = "area_cube";
+            this.Size = new System.Drawing.Size(250, 211);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

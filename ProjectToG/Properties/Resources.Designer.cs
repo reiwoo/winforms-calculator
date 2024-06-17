@@ -93,6 +93,66 @@ namespace ProjectToG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap formula_of_cone_47f580d8 {
+            get {
+                object obj = ResourceManager.GetObject("formula-of-cone-47f580d8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap formula_of_cube_80fd33cf {
+            get {
+                object obj = ResourceManager.GetObject("formula-of-cube-80fd33cf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap formula_of_cylinder_d2182a09 {
+            get {
+                object obj = ResourceManager.GetObject("formula-of-cylinder-d2182a09", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap formula_of_pyramid_a9dbb3c1 {
+            get {
+                object obj = ResourceManager.GetObject("formula-of-pyramid-a9dbb3c1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap formula_of_sphere_df270a45 {
+            get {
+                object obj = ResourceManager.GetObject("formula-of-sphere-df270a45", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap formula_of_triangular_prism_f86abc20 {
+            get {
+                object obj = ResourceManager.GetObject("formula-of-triangular-prism-f86abc20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap images {
             get {
                 object obj = ResourceManager.GetObject("images", resourceCulture);
@@ -126,6 +186,16 @@ namespace ProjectToG.Properties {
         internal static System.Drawing.Bitmap rectangle_bc6518de {
             get {
                 object obj = ResourceManager.GetObject("rectangle-bc6518de", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rectangular_parallelepiped_eceaab64 {
+            get {
+                object obj = ResourceManager.GetObject("rectangular-parallelepiped-eceaab64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
